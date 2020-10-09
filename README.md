@@ -1,5 +1,7 @@
 # Star Wars Search
 
+[Live Site](https://starwars.domcodesjs.vercel.app/)
+
 ## Requirements
 
 - Write a React app which allows users to search the Star Wars API for a character name, and displays the matching characters
