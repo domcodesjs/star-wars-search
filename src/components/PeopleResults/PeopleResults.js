@@ -52,11 +52,15 @@ const PeopleNoResultsContainer = styled.main`
 const PeopleResultsContainer = styled.main`
   margin: 4.8rem 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.6rem;
 
   h2 {
     color: #fff;
+  }
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 

@@ -23,10 +23,14 @@ const StyledHeader = styled.header`
 
     h1 {
       color: #ffe81f;
-      font-size: 7.2rem;
+      font-size: 5.6rem;
       text-align: center;
       user-select: none;
       cursor: pointer;
+
+      @media screen and (min-width: 576px) {
+        font-size: 7.2rem;
+      }
     }
   }
 `;

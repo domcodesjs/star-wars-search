@@ -11,14 +11,12 @@ const SearchForm = ({ searching, searchTerm, setSearchTerm }) => {
     <StyledMain>
       <StyledForm onSubmit={handleSubmit}>
         <div>
-          {/* <label htmlFor='searchTerm'>Search</label> */}
           <input
             type='text'
-            id='searchTerm'
             placeholder='type a name to search for...'
             value={searchTerm}
+            aria-label='Search'
             onChange={(e) => setSearchTerm(e.target.value)}
-            maxLength='27'
           />
         </div>
         {searching ? (
@@ -47,19 +45,10 @@ const StyledForm = styled.form`
   align-items: center;
   position: relative;
   margin-top: 2.4rem;
+  width: 100%;
 
-  select {
-    text-transform: capitalize;
-    border-radius: 3rem 0 0 3rem;
-    border: none;
-    height: 7.2rem;
-    cursor: pointer;
-    width: 12rem;
-    text-align-last: center;
-
-    /* :focus {
-      box-shadow: 0 0 3pt 2pt red;
-    } */
+  div {
+    width: 100%;
   }
 
   input {
@@ -67,9 +56,17 @@ const StyledForm = styled.form`
     border-left: none;
     height: 7.2rem;
     border-radius: 3rem;
-    width: 75rem;
-    font-size: 4rem;
+    width: 100%;
+    font-size: 1.6rem;
     padding-left: 1.6rem;
+
+    @media screen and (min-width: 576px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 4rem;
+    }
   }
 
   button {

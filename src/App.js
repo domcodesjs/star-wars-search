@@ -85,9 +85,21 @@ const App = () => {
 };
 
 const Wrapper = styled.div`
-  width: 96rem;
+  width: 32rem;
   height: 100vh;
   margin: 0 auto;
+
+  @media screen and (min-width: 576px) {
+    width: 54rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 72rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 96rem;
+  }
 `;
 
 export default App;
